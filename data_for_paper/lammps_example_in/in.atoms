@@ -1,0 +1,41 @@
+units		metal
+boundary	p p p
+atom_style full
+atom_modify	map array
+
+pair_style deepmd /home/sausiva/Diffusion_Paper/iter_10/train/00/graph.pb
+
+box tilt	large
+read_data	data.atoms
+
+group constrained id 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32
+group unconstrained subtract all constrained
+
+fix constraints constrained setforce 0.0 0.0 0.0
+
+pair_coeff * *
+
+thermo_style custom step temp etotal pe press pxx pyy pzz pxy pxz pyz lx ly lz vol
+group surface id 1:64
+group adsorbate subtract all surface
+thermo 100
+variable	dt	equal	0.0005
+variable	tdamp	equal 100*${dt}
+run_style verlet
+timestep ${dt}
+velocity unconstrained create 400.0 497201 rot yes mom yes dist gaussian
+fix equil all nvt temp 400.0 400.0 ${tdamp}
+run 400000
+unfix equil
+fix prod all nve
+compute msd adsorbate msd
+variable twopoint equal c_msd[4]/4/(step*${dt}+1.0e-6)
+fix 9 adsorbate vector 10 c_msd[4]
+variable fitslope equal slope(f_9)/4/(10*${dt})
+thermo_style custom step temp c_msd[1] c_msd[2] c_msd[3] c_msd[4] v_twopoint v_fitslope etotal pe press pxx pyy pzz pxy pxz pyz lx ly lz vol
+dump 1 all custom 400 diffuse.dump id type x y z
+dump 2 all custom 400 diffuse_uw.dump id type xu yu zu
+dump 3 adsorbate custom 400 diffuse_adsorbate.dump id type x y z xu yu zu
+dump 4 adsorbate custom 400 diffuse_adsorbate_uw.dump id type xu yu zu
+thermo 100
+run 4000000

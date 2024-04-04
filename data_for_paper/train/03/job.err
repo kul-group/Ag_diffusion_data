@@ -1,0 +1,221 @@
+2024-03-02 23:17:34.005932: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   agate-0
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+/home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/deepmd_utils/utils/compat.py:362: UserWarning: The argument training->numb_test has been deprecated since v2.0.0. Use training->validation_data->batch_size instead.
+  warnings.warn(
+DEEPMD INFO    Calculate neighbor statistics... (add --skip-neighbor-stat to skip this step)
+2024-03-02 23:18:02.143068: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+# warning: loc idx out of lower bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of lower bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of lower bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of lower bound (ignored if warned for more than 10 times) # warning: loc idx out of lower bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of lower bound (ignored if warned for more than 10# warning: loc idx out of lower bound (ignored if warned for more than 10
+ times) 
+ times) # warning: loc idx out of lower bound (ignored if warned for more than # warning: loc idx out of lower bound (ignored if warned for more than 10 times) 
+
+10 times) 
+# warning: loc idx out of lower bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than  times) # warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+ times) 
+10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+10 times) 
+# warning: ghost idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+# warning: loc idx out of upper bound (ignored if warned for more than 10 times) 
+DEEPMD INFO    training data with min nbor dist: 0.6490213343950985
+DEEPMD INFO    training data with max nbor size: [57  4 10  3]
+DEEPMD INFO     _____               _____   __  __  _____           _     _  _   
+DEEPMD INFO    |  __ \             |  __ \ |  \/  ||  __ \         | |   (_)| |  
+DEEPMD INFO    | |  | |  ___   ___ | |__) || \  / || |  | | ______ | | __ _ | |_ 
+DEEPMD INFO    | |  | | / _ \ / _ \|  ___/ | |\/| || |  | ||______|| |/ /| || __|
+DEEPMD INFO    | |__| ||  __/|  __/| |     | |  | || |__| |        |   < | || |_ 
+DEEPMD INFO    |_____/  \___| \___||_|     |_|  |_||_____/         |_|\_\|_| \__|
+DEEPMD INFO    Please read and cite:
+DEEPMD INFO    Wang, Zhang, Han and E, Comput.Phys.Comm. 228, 178-184 (2018)
+DEEPMD INFO    Zeng et al, J. Chem. Phys., 159, 054801 (2023)
+DEEPMD INFO    See https://deepmd.rtfd.io/credits/ for details.
+DEEPMD INFO    installed to:         /usr/local
+DEEPMD INFO    source :              
+DEEPMD INFO    source brach:         HEAD
+DEEPMD INFO    source commit:        a0cdc3c
+DEEPMD INFO    source commit at:     2024-01-23 01:04:06 -0500
+DEEPMD INFO    build float prec:     double
+DEEPMD INFO    build variant:        cpu
+DEEPMD INFO    build with tf inc:    /home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/tensorflow/include;/home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/tensorflow/../../../../include
+DEEPMD INFO    build with tf lib:    
+DEEPMD INFO    ---Summary of the training---------------------------------------
+DEEPMD INFO    running on:           agate-0
+DEEPMD INFO    computing device:     cpu:0
+DEEPMD INFO    Count of visible GPU: 0
+DEEPMD INFO    num_intra_threads:    16
+DEEPMD INFO    num_inter_threads:    4
+DEEPMD INFO    -----------------------------------------------------------------
+DEEPMD INFO    training without frame parameter
+DEEPMD INFO    built lr
+DEEPMD INFO    built network
+DEEPMD INFO    built training
+DEEPMD INFO    restart from model /home/sausiva/Diffusion_Paper/iter_10/train/03/model.ckpt
+DEEPMD INFO    start training at lr 4.23e-10 (== 4.23e-10), decay_step 5000, decay_rate 0.990754, final lr will be 3.51e-10
+WARNING:tensorflow:From /home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/deepmd/train/trainer.py:1198: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+DEEPMD INFO    batch 7901000 training time 30.28 s, testing time 0.16 s, total wall time 31.72 s
+DEEPMD INFO    batch 7902000 training time 27.69 s, testing time 0.14 s, total wall time 27.97 s
+DEEPMD INFO    batch 7903000 training time 25.79 s, testing time 0.21 s, total wall time 26.15 s
+DEEPMD INFO    batch 7904000 training time 26.46 s, testing time 0.19 s, total wall time 26.79 s
+DEEPMD INFO    batch 7905000 training time 25.00 s, testing time 0.16 s, total wall time 25.30 s
+DEEPMD INFO    batch 7906000 training time 26.95 s, testing time 0.23 s, total wall time 27.32 s
+DEEPMD INFO    batch 7907000 training time 29.70 s, testing time 0.19 s, total wall time 30.03 s
+DEEPMD INFO    batch 7908000 training time 24.53 s, testing time 0.20 s, total wall time 24.88 s
+DEEPMD INFO    batch 7909000 training time 25.90 s, testing time 0.25 s, total wall time 26.29 s
+DEEPMD INFO    batch 7910000 training time 23.78 s, testing time 0.18 s, total wall time 24.10 s
+DEEPMD INFO    batch 7911000 training time 26.23 s, testing time 0.15 s, total wall time 26.52 s
+DEEPMD INFO    batch 7912000 training time 25.10 s, testing time 0.40 s, total wall time 25.64 s
+DEEPMD INFO    batch 7913000 training time 24.74 s, testing time 0.26 s, total wall time 25.15 s
+DEEPMD INFO    batch 7914000 training time 24.37 s, testing time 0.15 s, total wall time 24.67 s
+DEEPMD INFO    batch 7915000 training time 26.65 s, testing time 0.21 s, total wall time 27.00 s
+DEEPMD INFO    batch 7916000 training time 24.36 s, testing time 0.14 s, total wall time 24.64 s
+DEEPMD INFO    batch 7917000 training time 27.41 s, testing time 0.08 s, total wall time 27.64 s
+DEEPMD INFO    batch 7918000 training time 25.63 s, testing time 0.20 s, total wall time 25.98 s
+DEEPMD INFO    batch 7919000 training time 25.74 s, testing time 0.14 s, total wall time 26.02 s
+DEEPMD INFO    batch 7920000 training time 28.88 s, testing time 0.17 s, total wall time 29.19 s
+DEEPMD INFO    batch 7921000 training time 29.38 s, testing time 0.16 s, total wall time 29.68 s
+DEEPMD INFO    batch 7922000 training time 28.09 s, testing time 0.16 s, total wall time 28.39 s
+DEEPMD INFO    batch 7923000 training time 28.82 s, testing time 0.10 s, total wall time 29.06 s
+DEEPMD INFO    batch 7924000 training time 25.64 s, testing time 0.16 s, total wall time 25.95 s
+DEEPMD INFO    batch 7925000 training time 27.99 s, testing time 0.19 s, total wall time 28.32 s
+DEEPMD INFO    batch 7926000 training time 24.40 s, testing time 0.16 s, total wall time 24.70 s
+DEEPMD INFO    batch 7927000 training time 27.91 s, testing time 0.11 s, total wall time 28.16 s
+DEEPMD INFO    batch 7928000 training time 26.42 s, testing time 0.14 s, total wall time 26.71 s
+DEEPMD INFO    batch 7929000 training time 27.25 s, testing time 0.17 s, total wall time 27.57 s
+DEEPMD INFO    batch 7930000 training time 27.68 s, testing time 0.16 s, total wall time 27.98 s
+DEEPMD INFO    batch 7931000 training time 25.74 s, testing time 0.19 s, total wall time 26.06 s
+DEEPMD INFO    batch 7932000 training time 24.42 s, testing time 0.10 s, total wall time 24.66 s
+DEEPMD INFO    batch 7933000 training time 25.30 s, testing time 0.16 s, total wall time 25.60 s
+DEEPMD INFO    batch 7934000 training time 25.04 s, testing time 0.12 s, total wall time 25.29 s
+DEEPMD INFO    batch 7935000 training time 28.30 s, testing time 0.15 s, total wall time 28.60 s
+DEEPMD INFO    batch 7936000 training time 26.44 s, testing time 0.13 s, total wall time 26.71 s
+DEEPMD INFO    batch 7937000 training time 27.86 s, testing time 0.05 s, total wall time 28.06 s
+DEEPMD INFO    batch 7938000 training time 29.58 s, testing time 0.14 s, total wall time 29.87 s
+DEEPMD INFO    batch 7939000 training time 27.94 s, testing time 0.15 s, total wall time 28.22 s
+DEEPMD INFO    batch 7940000 training time 27.13 s, testing time 0.09 s, total wall time 27.37 s
+DEEPMD INFO    batch 7941000 training time 28.22 s, testing time 0.06 s, total wall time 28.43 s
+DEEPMD INFO    batch 7942000 training time 25.79 s, testing time 0.08 s, total wall time 26.01 s
+DEEPMD INFO    batch 7943000 training time 26.22 s, testing time 0.07 s, total wall time 26.44 s
+DEEPMD INFO    batch 7944000 training time 29.64 s, testing time 0.17 s, total wall time 29.96 s
+DEEPMD INFO    batch 7945000 training time 29.54 s, testing time 0.08 s, total wall time 29.77 s
+DEEPMD INFO    batch 7946000 training time 29.53 s, testing time 0.15 s, total wall time 29.82 s
+DEEPMD INFO    batch 7947000 training time 29.19 s, testing time 0.14 s, total wall time 29.48 s
+DEEPMD INFO    batch 7948000 training time 28.58 s, testing time 0.18 s, total wall time 28.91 s
+DEEPMD INFO    batch 7949000 training time 24.84 s, testing time 0.14 s, total wall time 25.12 s
+DEEPMD INFO    batch 7950000 training time 25.42 s, testing time 0.09 s, total wall time 25.65 s
+DEEPMD INFO    batch 7951000 training time 27.09 s, testing time 0.11 s, total wall time 27.34 s
+DEEPMD INFO    batch 7952000 training time 28.74 s, testing time 0.15 s, total wall time 29.03 s
+DEEPMD INFO    batch 7953000 training time 27.75 s, testing time 0.13 s, total wall time 28.03 s
+DEEPMD INFO    batch 7954000 training time 27.84 s, testing time 0.17 s, total wall time 28.16 s
+DEEPMD INFO    batch 7955000 training time 27.37 s, testing time 0.10 s, total wall time 27.62 s
+DEEPMD INFO    batch 7956000 training time 24.44 s, testing time 0.11 s, total wall time 24.69 s
+DEEPMD INFO    batch 7957000 training time 27.04 s, testing time 0.14 s, total wall time 27.32 s
+DEEPMD INFO    batch 7958000 training time 27.29 s, testing time 0.13 s, total wall time 27.56 s
+DEEPMD INFO    batch 7959000 training time 26.97 s, testing time 0.20 s, total wall time 27.32 s
+DEEPMD INFO    batch 7960000 training time 28.55 s, testing time 0.14 s, total wall time 28.84 s
+DEEPMD INFO    batch 7961000 training time 26.97 s, testing time 0.16 s, total wall time 27.28 s
+DEEPMD INFO    batch 7962000 training time 27.12 s, testing time 0.08 s, total wall time 27.35 s
+DEEPMD INFO    batch 7963000 training time 28.17 s, testing time 0.11 s, total wall time 28.42 s
+DEEPMD INFO    batch 7964000 training time 26.85 s, testing time 0.10 s, total wall time 27.09 s
+DEEPMD INFO    batch 7965000 training time 27.59 s, testing time 0.12 s, total wall time 27.86 s
+DEEPMD INFO    batch 7966000 training time 27.11 s, testing time 0.09 s, total wall time 27.35 s
+DEEPMD INFO    batch 7967000 training time 26.88 s, testing time 0.07 s, total wall time 27.10 s
+DEEPMD INFO    batch 7968000 training time 27.21 s, testing time 0.15 s, total wall time 27.51 s
+DEEPMD INFO    batch 7969000 training time 26.55 s, testing time 0.03 s, total wall time 26.73 s
+DEEPMD INFO    batch 7970000 training time 26.54 s, testing time 0.09 s, total wall time 26.77 s
+DEEPMD INFO    batch 7971000 training time 29.01 s, testing time 0.09 s, total wall time 29.24 s
+DEEPMD INFO    batch 7972000 training time 27.59 s, testing time 0.19 s, total wall time 27.93 s
+DEEPMD INFO    batch 7973000 training time 27.67 s, testing time 0.15 s, total wall time 27.97 s
+DEEPMD INFO    batch 7974000 training time 26.58 s, testing time 0.12 s, total wall time 26.84 s
+DEEPMD INFO    batch 7975000 training time 30.93 s, testing time 0.14 s, total wall time 31.22 s
+DEEPMD INFO    batch 7976000 training time 26.50 s, testing time 0.15 s, total wall time 26.79 s
+DEEPMD INFO    batch 7977000 training time 24.91 s, testing time 0.12 s, total wall time 25.17 s
+DEEPMD INFO    batch 7978000 training time 25.80 s, testing time 0.17 s, total wall time 26.11 s
+DEEPMD INFO    batch 7979000 training time 28.00 s, testing time 0.08 s, total wall time 28.23 s
+DEEPMD INFO    batch 7980000 training time 26.22 s, testing time 0.05 s, total wall time 26.41 s
+DEEPMD INFO    batch 7981000 training time 26.57 s, testing time 0.09 s, total wall time 26.81 s
+DEEPMD INFO    batch 7982000 training time 27.36 s, testing time 0.07 s, total wall time 27.57 s
+DEEPMD INFO    batch 7983000 training time 27.00 s, testing time 0.05 s, total wall time 27.19 s
+DEEPMD INFO    batch 7984000 training time 27.22 s, testing time 0.08 s, total wall time 27.44 s
+DEEPMD INFO    batch 7985000 training time 26.87 s, testing time 0.13 s, total wall time 27.14 s
+DEEPMD INFO    batch 7986000 training time 26.92 s, testing time 0.10 s, total wall time 27.17 s
+DEEPMD INFO    batch 7987000 training time 30.89 s, testing time 0.17 s, total wall time 31.20 s
+DEEPMD INFO    batch 7988000 training time 29.76 s, testing time 0.07 s, total wall time 29.97 s
+DEEPMD INFO    batch 7989000 training time 27.97 s, testing time 0.06 s, total wall time 28.17 s
+DEEPMD INFO    batch 7990000 training time 27.62 s, testing time 0.12 s, total wall time 27.88 s
+DEEPMD INFO    batch 7991000 training time 25.53 s, testing time 0.07 s, total wall time 25.74 s
+DEEPMD INFO    batch 7992000 training time 26.60 s, testing time 0.13 s, total wall time 26.88 s
+DEEPMD INFO    batch 7993000 training time 25.12 s, testing time 0.11 s, total wall time 25.38 s
+DEEPMD INFO    batch 7994000 training time 28.57 s, testing time 0.08 s, total wall time 28.79 s
+DEEPMD INFO    batch 7995000 training time 27.85 s, testing time 0.07 s, total wall time 28.07 s
+DEEPMD INFO    batch 7996000 training time 26.97 s, testing time 0.10 s, total wall time 27.22 s
+DEEPMD INFO    batch 7997000 training time 26.36 s, testing time 0.07 s, total wall time 26.58 s
+DEEPMD INFO    batch 7998000 training time 26.36 s, testing time 0.14 s, total wall time 26.64 s
+DEEPMD INFO    batch 7999000 training time 26.57 s, testing time 0.14 s, total wall time 26.85 s
+DEEPMD INFO    batch 8000000 training time 27.41 s, testing time 0.09 s, total wall time 27.64 s
+DEEPMD INFO    saved checkpoint model.ckpt
+DEEPMD INFO    average training time: 0.0003 s/batch (exclude first 1000 batches)
+DEEPMD INFO    finished training
+DEEPMD INFO    wall time: 2737.321 s
+2024-03-03 00:04:35.327257: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   agate-0
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+2024-03-03 00:04:42.522460: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+DEEPMD WARNING The following nodes are not in the graph: {'fitting_attr/aparam_nall', 'spin_attr/ntypes_spin'}. Skip freezeing these nodes. You may be freezing a checkpoint generated by an old version.
+DEEPMD INFO    The following nodes will be frozen: ['t_mesh', 'o_virial', 'model_type', 'train_attr/min_nbor_dist', 'descrpt_attr/ntypes', 'o_atom_virial', 'model_attr/model_version', 'train_attr/training_script', 'o_force', 'model_attr/tmap', 'fitting_attr/dfparam', 'fitting_attr/daparam', 'model_attr/model_type', 'descrpt_attr/rcut', 'o_atom_energy', 'o_energy']
+WARNING:tensorflow:From /home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/deepmd/entrypoints/freeze.py:370: convert_variables_to_constants (from tensorflow.python.framework.convert_to_constants) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.
+WARNING:tensorflow:From /home/sausiva/miniconda3/envs/deepmd-kit/lib/python3.11/site-packages/tensorflow/python/framework/convert_to_constants.py:946: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.
+DEEPMD INFO    3348 ops in the final graph.
